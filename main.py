@@ -15,4 +15,5 @@ agent = create_agent(
 # Run the agent
 agent.invoke(
     {"messages": [{"role": "user", "content": "what is the weather in sf"}]}
+    
 )
