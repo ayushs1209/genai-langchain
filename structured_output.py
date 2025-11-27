@@ -41,10 +41,3 @@ for message in userFeedback :
     ["human", message],
 ])
     print (result)
-
-
-
-
-
-
-
