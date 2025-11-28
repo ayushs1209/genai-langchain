@@ -12,7 +12,7 @@ class Output(BaseModel):
     name :str =  Field(description= "The name of the person")
     age : int = Field(gt=10, description="The age of the person")
     address : str = Field(description="The address of the person")
-    isMarried : Literal['True','False']
+    isMarried :  Literal['True','False']
 
 parser = PydanticOutputParser(pydantic_object=Output)
 
