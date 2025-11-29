@@ -97,8 +97,20 @@ split_text = CharacterTextSplitter(
     separator=''
 )
 
+split_text_by_words = CharacterTextSplitter(
+    chunk_size = 100,
+    chunk_overlap = 0,
+    separator=' '    # \n \n for a paragraph ,  \n for a newLine, " " empty space for a split by word, "" no space to split by character
+)
+
+
 texts = split_text.split_text(text)
 
 
 for i in texts:
     print( i + "\n \n")
+
+words = split_text_by_words.split_text(text)
+
+for i in words:
+    print(i + " \n \n")
