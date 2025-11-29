@@ -93,7 +93,7 @@ JavaScript classes are the most appropriate way to do object-oriented programmin
 
 split_text = CharacterTextSplitter(
     chunk_size = 100,
-    chunk_overlap = 0,
+    chunk_overlap = 10,
     separator=''
 )
 
